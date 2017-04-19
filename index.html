@@ -6,18 +6,7 @@
   <title>Nicole Saidy | Designer, Coach, Speaker</title>
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Serif:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="mdc.layout-grid.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/product.css">
-  <link rel="stylesheet" href="css/work.css">
-  <link rel="stylesheet" href="css/talks.css">
-  <link rel="stylesheet" href="css/blog.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/card.css">
-  <link rel="stylesheet" href="css/buttons.css">
-  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="bundle.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
@@ -26,13 +15,20 @@
 </head>
 
 <body>
-  <div id="particles-js"></div>
   <header>
-    <div class="navbar">
-      <a href="#about" id="link-about" class="navbar-link">About</a>
-      <a href="#work" id ="link-work" class="navbar-link">Work</a>
-      <a href="#blog" id ="link-blog" class="navbar-link">Blog</a>
-      <a href="#contact" id="link-contact" class="btn-primary-sm">Contact</a>
+    <div class="mdc-layout-grid max-width">
+      <div class="mdc-layout-grid__cell--span-2"></div>
+      <div class="mdc-layout-grid__cell--span-8">
+        <div class="navbar-grid">
+          <div class="navbar">
+            <a href="#about" id="link-about" class="navbar-link">About</a>
+            <a href="#work" id ="link-work" class="navbar-link">Work</a>
+            <a href="#blog" id ="link-blog" class="navbar-link">Blog</a>
+            <a href="#contact" id="link-contact" class="btn-primary-sm">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell--span-2"></div>
     </div>
   </header>
 
@@ -121,7 +117,7 @@
             </svg>
           </div>
           <h3>Design Teacher</h3>
-          <p>I coach design and front-end development at <a class="text-link" href="https://lewagon.com">Le Wagon</a> coding bootcamp in 5+ cities like Amsterdam, Brussels, Copenhagen &amp; Barcelona.</p>
+          <p>I coach design and front-end development at <a class="text-link" href="https://www.lewagon.com" target="_blank">Le Wagon</a> coding bootcamp in 5+ cities like Amsterdam, Brussels, Copenhagen &amp; Barcelona.</p>
         </div>
       </div>
 
@@ -149,11 +145,26 @@
       <div class="mdc-layout-grid max-width">
         <div class="mdc-layout-grid__cell--span-2"></div>
         <div class="mdc-layout-grid__cell--span-5 mdc-layout-grid__cell--span-8-tablet">
-          <img src="https://unsplash.it/600/500" alt="From idea to product" width="100%">
+          <div class="product-imgWrapper">
+            <svg width="100%" height="450px" viewBox="0 0 839 667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Artboard-Copy">
+                  <g id="ideatoproduct">
+                    <image id="img1" class="product-svg" transform="translate(0 56)" width="313" height="555" xlink:href="images/img1.png"></image>
+                    <image id="img2" class="product-svg" transform="translate(150 32)" width="332" height="603" xlink:href="images/img2.png"></image>
+                    <image id="img3" class="product-svg" transform="translate(305 0)" width="393" height="667" xlink:href="images/img3.png"></image>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
         <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--span-8-tablet">
           <h2>From idea to product</h2>
-          <p>I turn ideas into interactive digital experiences through a design process that consists of Planning, Wireframing, Prototyping, Testing &amp; Polishing.</p>
+          <p>I turn ideas into interactive digital experiences through a <a class="text-link" target="_blank" href="https://blog.prototypr.io/5-steps-for-a-successful-website-design-90290066f326">design process</a> that consists of Planning, Wireframing, Prototyping &amp; Testing.</p>
           <a href="mailto:nicolesaidy@gmail.com" class="btn-primary-lg">Request a quote</a>
         </div>
         <div class="mdc-layout-grid__cell--span-2"></div>
@@ -274,23 +285,31 @@
                 <h5>Designing great progressive web apps</h5>
                 <p>A look into PWAs from a design perspective, and guidelines for designing great PWAs.</p>
                 <div class="talk-conf">
-                  NDC Oslo (upcoming)
+                 <img src="images/pin.svg" alt="Location" width="12px" height="12px">
+                  NDC Oslo
                 </div>
+
               </div>
 
               <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet">
                 <h5>UX patterns for web developers</h5>
                 <p>Developer-friendly UX patterns that developers should start using in their everyday code.</p>
                 <div class="talk-conf">
-                  JSday Madrid (upcoming), NDC London, Connect.tech Atlanta
+                <img src="images/pin.svg" alt="Location" width="12px" height="12px">
+                  JSday Madrid, NDC London, Connect.tech Atlanta
                 </div>
               </div>
 
               <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet">
                 <h5>Bridging the designer developer gap</h5>
+
                 <p>How to better communicate through tips &amp; tricks for a smarter workflow.</p>
+
+
                 <div class="talk-conf">
-                  Ace! Krakow (upcoming), PHP Benelux Antwerp
+                <img src="images/pin.svg" alt="Location" width="12px" height="12px">
+
+                  Ace! Krakow, PHP Benelux, Connect.tech Atlanta
                 </div>
               </div>
 
@@ -394,15 +413,7 @@
         <h1>Let's talk</h1>
         <p>I'm always looking forward to new opportunities, <br> ping me if you got any. </p>
         <a href="mailto:nicolesaidy@gmail.com" class="text-link">
-          <svg width="18px" height="13px" viewBox="0 0 15 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs></defs>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="envelope" fill-rule="nonzero" fill="#FFFFFF">
-                <path d="M13.1497934,0.0223577236 L1.83161157,0.0223577236 C0.821280992,0.0223577236 0,0.812330623 0,1.78414634 L0,9.22479675 C0,10.1966125 0.821280992,10.9865854 1.83161157,10.9865854 L13.1466942,10.9865854 C14.1570248,10.9865854 14.9783058,10.1966125 14.9783058,9.22479675 L14.9783058,1.78712737 C14.981405,0.815311653 14.160124,0.0223577236 13.1497934,0.0223577236 Z M14.1446281,9.22479675 C14.1446281,9.75243902 13.6983471,10.1817073 13.1497934,10.1817073 L1.83161157,10.1817073 C1.28305785,10.1817073 0.83677686,9.75243902 0.83677686,9.22479675 L0.83677686,1.78712737 C0.83677686,1.25948509 1.28305785,0.830216802 1.83161157,0.830216802 L13.1466942,0.830216802 C13.6952479,0.830216802 14.1415289,1.25948509 14.1415289,1.78712737 L14.1415289,9.22479675 L14.1446281,9.22479675 Z" id="Shape"></path>
-                <path d="M9.44628099,5.41205962 L13.1095041,2.25216802 C13.2799587,2.10311653 13.2954545,1.849729 13.1404959,1.68279133 C12.9855372,1.51883469 12.7221074,1.50392954 12.5485537,1.65298103 L7.49690083,6.01422764 L6.51136364,5.16761518 C6.50826446,5.16463415 6.50516529,5.16165312 6.50516529,5.15867209 C6.48347107,5.13780488 6.46177686,5.1199187 6.43698347,5.10203252 L2.42665289,1.65 C2.25309917,1.50094851 1.98966942,1.51585366 1.83471074,1.68279133 C1.67975207,1.849729 1.69524793,2.10311653 1.86880165,2.25216802 L5.57541322,5.43888889 L1.88429752,8.76273713 C1.71694215,8.91476965 1.70764463,9.16815718 1.86570248,9.33211382 C1.94938017,9.41558266 2.06095041,9.4602981 2.17252066,9.4602981 C2.27479339,9.4602981 2.37706612,9.42452575 2.45764463,9.35298103 L6.20454545,5.98143631 L7.22107438,6.85487805 C7.30165289,6.92344173 7.40082645,6.95623306 7.5,6.95623306 C7.59917355,6.95623306 7.70144628,6.9204607 7.77892562,6.85189702 L8.82334711,5.95162602 L12.5485537,9.35596206 C12.6291322,9.4304878 12.7345041,9.46626016 12.8367769,9.46626016 C12.9483471,9.46626016 13.0568182,9.42452575 13.1404959,9.34105691 C13.2985537,9.1800813 13.2923554,8.92371274 13.125,8.77168022 L9.44628099,5.41205962 Z" id="Shape"></path>
-              </g>
-            </g>
-          </svg>
+          <img src="images/mail.svg" alt="Email" width="16px">
           nicolesaidy@gmail.com
         </a>
       </div>
@@ -411,78 +422,23 @@
       <div class="footer-icons">
         <div>
           <a target="_blank" href="https://linkedin.com/in/nicolesaidy" class="footer-icon">
-            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="003-linkedin-logo" class="footer-svg" fill-rule="nonzero" fill="#526173">
-                  <path d="M21.6,0 L2.4,0 C1.08,0 0,1.08 0,2.4 L0,21.6 C0,22.92 1.08,24 2.4,24 L21.6,24 C22.92,24 24,22.92 24,21.6 L24,2.4 C24,1.08 22.92,0 21.6,0 Z M7.2,20.4 L3.6,20.4 L3.6,9.6 L7.2,9.6 L7.2,20.4 Z M5.4,7.56 C4.2,7.56 3.24,6.6 3.24,5.4 C3.24,4.2 4.2,3.24 5.4,3.24 C6.6,3.24 7.56,4.2 7.56,5.4 C7.56,6.6 6.6,7.56 5.4,7.56 Z M20.4,20.4 L16.8,20.4 L16.8,14.04 C16.8,13.0800471 15.96,12.24 15,12.24 C14.04,12.24 13.2,13.0800471 13.2,14.04 L13.2,20.4 L9.6,20.4 L9.6,9.6 L13.2,9.6 L13.2,11.04 C13.8,10.08 15.12,9.36 16.2,9.36 C18.48,9.36 20.4,11.28 20.4,13.56 L20.4,20.4 Z" id="Shape"></path>
-                </g>
-              </g>
-            </svg>
+            <img src="images/linkedin.svg" alt="Linkedin" class="footer-iconImg">
           </a>
           <a target="_blank" href="https://behance.net/nicolesaidy" class="footer-icon">
-            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-              <desc>Created with Sketch.</desc>
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="behance-logo" class="footer-svg" fill-rule="nonzero" fill="#526173">
-                  <path d="M17.5582979,10.6720851 C15.6893617,10.6720851 15.4289362,12.5377021 15.4289362,12.5377021 L19.403234,12.5377021 C19.4034894,12.5374468 19.4269787,10.6720851 17.5582979,10.6720851 Z" id="Shape"></path>
-                  <path d="M8.54119149,12.5374468 L5.01906383,12.5374468 L5.01906383,15.7710638 L8.37829787,15.7710638 C8.88357447,15.7570213 9.81651064,15.5984681 9.81651064,14.2000851 C9.81651064,12.5211064 8.54119149,12.5374468 8.54119149,12.5374468 Z" id="Shape"></path>
-                  <path d="M9.39676596,9.23080851 C9.39676596,7.97208511 8.54093617,7.97208511 8.54093617,7.97208511 L8.08723404,7.97208511 L5.01906383,7.97208511 L5.01906383,10.6718298 L8.3226383,10.6718298 C8.89353191,10.6720851 9.39676596,10.4895319 9.39676596,9.23080851 Z" id="Shape"></path>
-                  <path d="M22.7234043,0 L1.27659574,0 C0.571659574,0 0,0.571404255 0,1.27659574 L0,22.7234043 C0,23.4285957 0.571659574,24 1.27659574,24 L22.7234043,24 C23.4285957,24 24,23.4285957 24,22.7234043 L24,1.27659574 C24,0.571404255 23.4285957,0 22.7234043,0 Z M14.9078298,6.5346383 L19.8995745,6.5346383 L19.8995745,8.02468085 L14.9078298,8.02468085 L14.9078298,6.5346383 Z M12.3842553,14.3502128 C12.3842553,18.0428936 8.54093617,17.9211064 8.54093617,17.9211064 L5.01906383,17.9211064 L4.91565957,17.9211064 L2.24502128,17.9211064 L2.24502128,5.82204255 L4.91565957,5.82204255 L5.01906383,5.82204255 L8.54119149,5.82204255 C10.4542979,5.82204255 11.964766,6.87829787 11.964766,9.04340426 C11.964766,11.2085106 10.1188085,11.3458723 10.1188085,11.3458723 C12.5525106,11.3458723 12.3842553,14.3502128 12.3842553,14.3502128 Z M21.7222979,14.1523404 L15.4521702,14.1523404 C15.4521702,16.4004255 17.5815319,16.2582128 17.5815319,16.2582128 C19.5926809,16.2582128 19.5219574,14.9565957 19.5219574,14.9565957 L21.6513191,14.9565957 C21.6513191,18.4108085 17.5110638,18.1746383 17.5110638,18.1746383 C12.5425532,18.1746383 12.8617021,13.5490213 12.8617021,13.5490213 C12.8617021,13.5490213 12.857617,8.90042553 17.5108085,8.90042553 C22.4083404,8.90017021 21.7222979,14.1523404 21.7222979,14.1523404 Z" id="Shape"></path>
-                </g>
-              </g>
-            </svg>
+            <img src="images/behance.svg" alt="Behance" class="footer-iconImg">
           </a>
           <a target="_blank" href="https://youtube.com/nicolesaidy" class="footer-icon">
-            <svg width="28px" height="22px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-              <desc>Created with Sketch.</desc>
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="002-play" class="footer-svg" fill-rule="nonzero" fill="#526173">
-                  <path d="M21.6,0.48 C20.88,0.24 16.44,0 12,0 C7.56,0 3.12,0.24 2.4,0.48 C0.48,1.08 0,5.28 0,9.6 C0,13.92 0.48,18.12 2.4,18.72 C3.12,18.96 7.56,19.2 12,19.2 C16.44,19.2 20.88,18.96 21.6,18.72 C23.52,18.12 24,13.92 24,9.6 C24,5.28 23.52,1.08 21.6,0.48 Z M9.6,15 L9.6,4.2 L16.8,9.6 L9.6,15 Z" id="Shape"></path>
-                </g>
-              </g>
-            </svg>
+            <img src="images/youtube.svg" alt="Youtube" class="footer-iconImg">
           </a>
           <a target="_blank" href="https://facebook.com/nicolesaidy" class="footer-icon">
-
-            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-              <desc>Created with Sketch.</desc>
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="006-facebook-logo" class="footer-svg" fill-rule="nonzero" fill="#526173">
-                  <path d="M21.6,0 L2.4,0 C1.08,0 0,1.08 0,2.4 L0,21.6 C0,22.92 1.08,24 2.4,24 L21.6,24 C22.92,24 24,22.92 24,21.6 L24,2.4 C24,1.08 22.92,0 21.6,0 Z M20.4,2.4 L20.4,6 L18,6 C17.28,6 16.8,6.48 16.8,7.2 L16.8,9.6 L20.4,9.6 L20.4,13.2 L16.8,13.2 L16.8,21.6 L13.2,21.6 L13.2,13.2 L10.8,13.2 L10.8,9.6 L13.2,9.6 L13.2,6.6 C13.2,4.32 15.12,2.4 17.4,2.4 L20.4,2.4 Z" id="Shape"></path>
-                </g>
-              </g>
-            </svg>
+            <img src="images/facebook.svg" alt="Facebook" class="footer-iconImg">
           </a>
           <a target="_blank" href="https://twitter.com/nicolesaidy" class="footer-icon">
-            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-              <desc>Created with Sketch.</desc>
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="004-twitter-logo-on-black-background" class="footer-svg" fill-rule="nonzero" fill="#526173">
-                  <path d="M21.6,0 L2.4,0 C1.08,0 0,1.08 0,2.4 L0,21.6 C0,22.92 1.08,24 2.4,24 L21.6,24 C22.92,24 24,22.92 24,21.6 L24,2.4 C24,1.08 22.92,0 21.6,0 Z M18.84,8.76 C18.72,14.28 15.24,18.12 9.96,18.36 C7.8,18.48 6.24,17.76 4.8,16.92 C6.36,17.1600471 8.4,16.5600471 9.48,15.6 C7.92,15.48 6.96,14.64 6.48,13.32 C6.96,13.44 7.44,13.32 7.8,13.32 C6.36,12.84 5.4,12 5.28,10.08 C5.64,10.32 6.12,10.44 6.6,10.44 C5.52,9.84 4.8,7.56 5.64,6.12 C7.2,7.8 9.12,9.24 12.24,9.48 C11.4,6.12 15.9600471,4.32 17.7600471,6.6 C18.6000471,6.48 19.2000471,6.12 19.8000471,5.88 C19.5600471,6.72 19.0800471,7.2 18.4800471,7.68 C19.0800471,7.56 19.6800471,7.44 20.1600471,7.2 C20.04,7.8 19.44,8.28 18.84,8.76 Z" id="Shape"></path>
-                </g>
-              </g>
-            </svg>
+            <img src="images/twitter.svg" alt="Twitter" class="footer-iconImg">
           </a>
           <a target="_blank" href="https://instagram.com/nicolesaidy" class="footer-icon">
-            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="005-instagram-logo" class="footer-svg" fill-rule="nonzero" fill="#526173">
-                  <path d="M21.6,0 L2.4,0 C1.08,0 0,1.08 0,2.4 L0,21.6 C0,22.92 1.08,24 2.4,24 L21.6,24 C22.92,24 24,22.92 24,21.6 L24,2.4 C24,1.08 22.92,0 21.6,0 Z M12,7.2 C14.64,7.2 16.8,9.36 16.8,12 C16.8,14.64 14.64,16.8 12,16.8 C9.36,16.8 7.2,14.64 7.2,12 C7.2,9.36 9.36,7.2 12,7.2 Z M3,21.6 C2.64,21.6 2.4,21.36 2.4,21 L2.4,10.8 L4.92,10.8 C4.8,11.16 4.8,11.64 4.8,12 C4.8,15.96 8.04,19.2 12,19.2 C15.96,19.2 19.2,15.96 19.2,12 C19.2,11.64 19.2,11.16 19.08,10.8 L21.6,10.8 L21.6,21 C21.6,21.36 21.36,21.6 21,21.6 L3,21.6 Z M21.6,5.4 C21.6,5.76 21.36,6 21,6 L18.6,6 C18.24,6 18,5.76 18,5.4 L18,3 C18,2.64 18.24,2.4 18.6,2.4 L21,2.4 C21.36,2.4 21.6,2.64 21.6,3 L21.6,5.4 Z" id="Shape"></path>
-                </g>
-              </g>
-            </svg>
+            <img src="images/instagram.svg" alt="Instagram" class="footer-iconImg">
           </a>
-
         </div>
       </div>
       <div class="footer-label">
@@ -490,7 +446,9 @@
       </div>
     </div>
   </footer>
-  <script src="particles.min.js"></script>
-  <script src="app.js"></script>
+
+  <div id="particles-js"></div>
+
+  <script async defer src="bundle.js"></script>
 </body>
 </html>
