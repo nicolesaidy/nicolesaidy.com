@@ -4,9 +4,8 @@
     <title>favicon</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="10.6106835%" y1="94.12911%" x2="84.0594764%" y2="23.2040858%" id="linearGradient-1">
-            <stop stop-color="#8FCAE4" offset="0%"></stop>
-            <stop stop-color="#90C7E4" offset="21.1050421%"></stop>
+        <linearGradient x1="17.2026755%" y1="89.0999448%" x2="84.0594764%" y2="23.2040858%" id="linearGradient-1">
+            <stop stop-color="#8FBBE4" offset="0%"></stop>
             <stop stop-color="#99A3E8" offset="100%"></stop>
         </linearGradient>
     </defs>
