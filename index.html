@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/bundle.css">
   <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2" as="font" crossorigin>
   <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2" as="font" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/ptserif/v8/I-OtoJZa3TeyH6D9oli3iXYhjbSpvc47ee6xR_80Hnw.woff2" as="font" crossorigin>
+  <link rel="preload" href="https://fonts.gstat
+  ic.com/s/ptserif/v8/I-OtoJZa3TeyH6D9oli3iXYhjbSpvc47ee6xR_80Hnw.woff2" as="font" crossorigin>
   <link rel="preload" href="https://fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpIgp9Q8gbYrhqGlRav_IXfk.woff2" as="font" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
@@ -42,10 +43,9 @@
         <div class="navbar-grid">
           <img class="logo" src="images/icon.svg" alt="Logo">
           <div class="menu">
-            <a href="#about" id="link-about" class="navbar-link">About</a>
-            <a href="#work" id ="link-work" class="navbar-link">Work</a>
-            <a href="#blog" id ="link-blog" class="navbar-link">Blog</a>
-            <a href="#contact" id="link-contact" class="btn-primary-sm">Contact</a>
+            <a href="https://medium.com/@nicolesaidy" target="_blank" id="link-blog" class="navbar-link">Blog</a>
+            <a href="#" target="_blank" id="link-course-nav" class="navbar-link">Course</a>
+            <a href="mailto:nicolesaidy@gmail.com" id="link-contact" class="navbar-link">Contact</a>
           </div>
         </div>
       </div>
@@ -53,16 +53,15 @@
     </div>
   </header>
 
-
-      <div class="mdc-layout-grid max-width">
-        <div class="mdc-layout-grid__cell--span-2"></div>
-        <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-middle">
-          <div class="cover">
-          <h1>Hi! I’m Nicole. Designer, coach &amp; speaker.</h1>
-        </div>
-        </div>
-        <div class="mdc-layout-grid__cell--span-2"></div>
+  <div class="mdc-layout-grid max-width">
+    <div class="mdc-layout-grid__cell--span-2"></div>
+    <div class="mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-middle">
+      <div class="cover">
+        <h1>Hi! I’m Nicole. Designer, coach &amp; speaker.</h1>
       </div>
+    </div>
+    <div class="mdc-layout-grid__cell--span-2"></div>
+  </div>
 
 
   <div class="about">
@@ -423,6 +422,11 @@
           nicolesaidy@gmail.com
         </a>
       </div>
+      <p class="subscribe-message">
+        <a href="#" id="link-course-footer" class="text-link">
+          Psst.. Want to become a UI/UX ninja? Click here.
+        </a>
+      </p>
     </div>
     <div class="footer-bottom">
       <div class="footer-icons">
@@ -455,22 +459,36 @@
 
   <div id="particles-js"></div>
 
-  <a href="https://onepagelove.com/nicole-saidy" target="_blank" style="display: inline-block; position: fixed; left: 0; top: 40px; z-index:999999;" id="opl-ribbon"><img width="73" height="56" src="https://s3.amazonaws.com/onepagelove/one-page-love-award-retina-left.png" srcset="https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png 1x , https://s3.amazonaws.com/onepagelove/one-page-love-award-retina-left.png 2x"></a>
+  <div id="subscribe">
+    <div id="subscribe-close">
+      <svg fill="#a4b1c1" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+        <path d="M0 0h24v24H0z" fill="none"></path>
+      </svg>
+    </div>
+    <iframe id="subscribe-popup"
+    title="Example2"
+    frameborder="0"
+    src="https://upscri.be/42e791/">
+  </iframe>
+</div>
 
-  <script async defer src="bundle-o.js"></script>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "email": "mailto:nicolesaidy@gmail.com",
-      "image": "https://nicolesaidy.com/images/nicolesaidy.jpg",
-      "jobTitle": "Self-employed",
-      "name": "Nicole Saidy",
-      "gender": "female",
-      "url": "https://nicolesaidy.com",
-      "description": "Designer, Coach, Speaker"
-    }
-  </script>
+<a href="https://onepagelove.com/nicole-saidy" target="_blank" style="display: inline-block; position: fixed; left: 0; top: 40px; z-index:999999;" id="opl-ribbon"><img width="73" height="56" src="https://s3.amazonaws.com/onepagelove/one-page-love-award-retina-left.png" srcset="https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png 1x , https://s3.amazonaws.com/onepagelove/one-page-love-award-retina-left.png 2x"></a>
+
+<script async defer src="bundle-o.js"></script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "email": "mailto:nicolesaidy@gmail.com",
+    "image": "https://nicolesaidy.com/images/nicolesaidy.jpg",
+    "jobTitle": "Self-employed",
+    "name": "Nicole Saidy",
+    "gender": "female",
+    "url": "https://nicolesaidy.com",
+    "description": "Designer, Coach, Speaker"
+  }
+</script>
 
 </body>
 </html>
